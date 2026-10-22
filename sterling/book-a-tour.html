@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a tour · Sterling, Vancouver</title>
+  <meta name="description" content="Book an in-person or video tour of Sterling at Cambie & King Edward. Website concept by Basepoint.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="img/sterling-logo-navy.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="../assets/css/talk.css">
+</head>
+<body data-page="tour">
+
+<div class="concept-bar"><div class="wrap"><span>Website concept by Basepoint for Sterling · not the official Sterling site</span><a href="../index.html">← Back to the proposal</a></div></div>
+
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Sterling home"><img src="img/sterling-logo-navy.svg" alt="Sterling"></a>
+  <nav class="menu" id="menu" aria-label="Main">
+    <a href="homes.html">Homes</a><a href="amenities.html">Amenities</a><a href="neighbourhood.html">Neighbourhood</a><a href="gallery.html">Gallery</a>
+  </nav>
+  <div class="head-cta"><a class="btn btn-line btn-sm" data-apply href="#">Apply</a><a class="btn btn-navy btn-sm" href="book-a-tour.html" aria-current="page">Book a tour</a></div>
+  <button class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Menu"><span></span></button>
+</div></header>
+
+<main>
+  <section class="page-hero" style="padding-bottom:44px">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Book a tour</p>
+      <h1 id="tour-title">Book a tour</h1>
+      <p class="lede">Choose a home and a time that suits you. Michael confirms by text or email, in person or on a video call.</p>
+    </div>
+  </section>
+
+  <div class="wrap tour">
+    <form class="form" id="tour-form" novalidate>
+      <input type="hidden" name="kind" id="kind" value="Tour">
+      <input type="hidden" name="date" id="date">
+      <input type="hidden" name="time" id="time" value="Afternoon (12–4 pm)">
+      <input type="hidden" name="tourtype" id="tourtype" value="In person">
+
+      <fieldset class="fieldset">
+        <legend>1 · The home</legend>
+        <div class="row2">
+          <div class="field"><label for="type">Home type</label>
+            <select id="type" name="type"><option value="">Any</option><option value="studio">Studio</option><option value="one">1 Bed</option><option value="two">2 Bed</option></select></div>
+          <div class="field"><label for="unit">Home</label><select id="unit" name="unit"></select></div>
+        </div>
+        <div class="field"><label for="plan">Floor plan</label><select id="plan" name="plan"></select></div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>2 · When</legend>
+        <div class="days" id="days" role="group" aria-label="Preferred day"></div>
+        <div class="slots">
+          <div class="seg" data-for="time" role="group" aria-label="Preferred time">
+            <button type="button" data-v="Morning (10 am–12 pm)" aria-pressed="false">Morning</button>
+            <button type="button" data-v="Afternoon (12–4 pm)" aria-pressed="true">Afternoon</button>
+            <button type="button" data-v="Evening (4–6 pm)" aria-pressed="false">Evening</button>
+          </div>
+          <div class="seg" data-for="tourtype" role="group" aria-label="Tour type">
+            <button type="button" data-v="In person" aria-pressed="true">In person</button>
+            <button type="button" data-v="Video call" aria-pressed="false">Video call</button>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>3 · About you</legend>
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required><span class="err">Please add your name.</span></div>
+        <div class="row2">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err">Please add a valid email.</span></div>
+          <div class="field"><label for="phone">Mobile (for text confirmation)</label><input id="phone" name="phone" type="tel" autocomplete="tel" required><span class="err">Please add a phone number.</span></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="movein">Move-in</label>
+            <select id="movein" name="movein"><option>As soon as possible</option><option>Within 30 days</option><option>In 1–2 months</option><option>In 2+ months</option></select></div>
+          <div class="field"><label for="pets">Pets</label>
+            <select id="pets" name="pets"><option>No pets</option><option>Cat</option><option>Dog</option><option>Cat and dog</option><option>Other</option></select></div>
+        </div>
+        <div class="field"><label for="message">Anything else? (optional)</label><textarea id="message" name="message" placeholder="Budget, parking, questions about the offer…"></textarea></div>
+        <label class="check"><input type="checkbox" name="consent" value="Yes" required> I agree to be contacted by text or email about this request.</label>
+        <span class="err">Please tick the box so we can contact you.</span>
+      </fieldset>
+
+      <div>
+        <button class="btn btn-navy" type="submit" style="min-width:220px">Send request</button>
+        <p id="send-err" hidden style="color:#B3261E;font-size:13px;margin-top:12px">Something went wrong. Please call or text <a data-phone href="#"></a>.</p>
+      </div>
+    </form>
+
+    <aside class="host">
+      <div class="host-top"><img src="../assets/img/team/michael-avatar.webp" alt="Michael"><div><b>Michael</b><span>Your Sterling tour host · Basepoint</span></div></div>
+      <ul>
+        <li>Tours in person or by video call</li>
+        <li>See the rooftop and amenity spaces</li>
+        <li>Get the current offer and home-by-home pricing</li>
+        <li>Apply online right after your tour</li>
+      </ul>
+      <div class="btns"><a class="btn btn-line btn-sm" data-phone href="#"></a><a class="btn btn-line btn-sm" href="#" data-talk>Message</a></div>
+      <p style="font-size:13px;color:var(--muted);margin:22px 0 0">Ready to apply? <a data-apply href="#">Start your application</a>.</p>
+    </aside>
+  </div>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="foot-grid">
+    <div><img src="img/sterling-logo-white.svg" alt="Sterling"><p style="margin-top:22px;max-width:30ch">90 rental homes at Cambie Street and King Edward Avenue, Vancouver.</p></div>
+    <div><h4>Visit</h4><p>4118 Cambie Street<br>Vancouver, BC V5Z 0L5</p><p><a href="https://maps.google.com/?q=4118+Cambie+Street+Vancouver+BC" target="_blank" rel="noopener">Get directions</a></p></div>
+    <div><h4>Leasing</h4><p>Michael · Basepoint</p><p><a data-phone href="#"></a></p><p><a data-email href="#"></a></p></div>
+    <div><h4>Explore</h4><ul><li><a href="homes.html">Homes &amp; floor plans</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="neighbourhood.html">Neighbourhood</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="book-a-tour.html">Book a tour</a></li><li><a data-apply href="#">Apply online</a></li><li><a data-residents href="#">Resident login</a></li></ul></div>
+  </div>
+  <div class="foot-base"><span>Developed by Pennyfarthing Homes · Managed by Bridgeview Management · Leasing by Basepoint</span><span>Concept site. E.&amp;O.E.</span></div>
+</div></footer>
+
+<script src="../assets/js/talk.js" data-base="../assets/" data-role="Sterling leasing · Basepoint" data-greeting="Hi, I'm Michael. Prefer to just send me a quick note instead of the form? Go ahead." data-subject="Sterling tour question"></script>
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
