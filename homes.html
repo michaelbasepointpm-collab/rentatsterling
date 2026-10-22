@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homes &amp; floor plans · Sterling, Vancouver</title>
+  <meta name="description" content="Studio, 1 and 2 bedroom floor plans at Sterling, with the homes available now. Website concept by Basepoint.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="img/sterling-logo-navy.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="../assets/css/talk.css">
+</head>
+<body data-page="homes">
+
+<div class="concept-bar"><div class="wrap"><span>Website concept by Basepoint for Sterling · not the official Sterling site</span><a href="../index.html">← Back to the proposal</a></div></div>
+
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Sterling home"><img src="img/sterling-logo-navy.svg" alt="Sterling"></a>
+  <nav class="menu" id="menu" aria-label="Main">
+    <a href="homes.html" aria-current="page">Homes</a><a href="amenities.html">Amenities</a><a href="neighbourhood.html">Neighbourhood</a><a href="gallery.html">Gallery</a>
+  </nav>
+  <div class="head-cta"><a class="btn btn-line btn-sm" data-apply href="#">Apply</a><a class="btn btn-navy btn-sm" href="book-a-tour.html">Book a tour</a></div>
+  <button class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Menu"><span></span></button>
+</div></header>
+
+<div class="offer-ribbon"><div class="wrap"><span><b>First 2 months free</b> on select homes with a 14-month lease.</span><a href="index.html#offer">See how it works</a></div></div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Homes</p>
+      <h1>Find your home at Sterling</h1>
+      <p class="lede"><span data-count="all"></span> homes are available now across <span data-plans></span> floor plans. Pick a home type, open a plan to see the drawing and the homes available on it, then book a tour or apply.</p>
+    </div>
+  </section>
+
+  <div class="finder-bar">
+    <div class="wrap">
+      <div class="chips" role="group" aria-label="Home type">
+        <button class="chip" data-type="all" aria-pressed="true">All</button>
+        <button class="chip" data-type="studio" aria-pressed="false">Studio</button>
+        <button class="chip" data-type="one" aria-pressed="false">1 Bed</button>
+        <button class="chip" data-type="two" aria-pressed="false">2 Bed</button>
+      </div>
+      <label class="toggle"><input type="checkbox" id="avail-only" checked> Available now</label>
+      <label class="toggle"><input type="checkbox" id="den-only"> Has a den</label>
+      <label class="sr" for="sort">Sort by</label>
+      <select id="sort">
+        <option value="price">Price: low to high</option>
+        <option value="size">Size: largest first</option>
+        <option value="avail">Most available</option>
+      </select>
+      <span class="finder-count" id="count" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="plans" id="plans"></div>
+  </div>
+</main>
+
+<dialog class="sheet" id="sheet" aria-label="Floor plan details">
+  <button class="sheet-close" aria-label="Close">×</button>
+  <div class="sheet-in">
+    <div class="sheet-img" id="sheet-img"></div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+</dialog>
+
+<footer class="foot"><div class="wrap">
+  <div class="foot-grid">
+    <div><img src="img/sterling-logo-white.svg" alt="Sterling"><p style="margin-top:22px;max-width:30ch">90 rental homes at Cambie Street and King Edward Avenue, Vancouver.</p></div>
+    <div><h4>Visit</h4><p>4118 Cambie Street<br>Vancouver, BC V5Z 0L5</p><p><a href="https://maps.google.com/?q=4118+Cambie+Street+Vancouver+BC" target="_blank" rel="noopener">Get directions</a></p></div>
+    <div><h4>Leasing</h4><p>Michael · Basepoint</p><p><a data-phone href="#"></a></p><p><a data-email href="#"></a></p></div>
+    <div><h4>Explore</h4><ul><li><a href="homes.html">Homes &amp; floor plans</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="neighbourhood.html">Neighbourhood</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="book-a-tour.html">Book a tour</a></li><li><a data-apply href="#">Apply online</a></li><li><a data-residents href="#">Resident login</a></li></ul></div>
+  </div>
+  <div class="foot-base"><span>Developed by Pennyfarthing Homes · Managed by Bridgeview Management · Leasing by Basepoint</span><span>Concept site. Floor plans are approximate. E.&amp;O.E.</span></div>
+</div></footer>
+
+<script src="../assets/js/talk.js" data-base="../assets/" data-role="Sterling leasing · Basepoint" data-greeting="Hi, I'm Michael. Not sure which plan fits? Tell me your budget and move-in date and I'll suggest the best homes." data-subject="Sterling homes question"></script>
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
